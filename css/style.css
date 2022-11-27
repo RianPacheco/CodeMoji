@@ -1,0 +1,279 @@
+/*** FONTS ***/
+
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+/*** RESET ***/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+body {
+  width: 1920px;
+  height: 1277px;
+  overflow-x: hidden;
+}
+
+/*** CABEÇÃLHO DO PROJETO ***/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 24px;
+}
+
+header p {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #2f2f2f;
+}
+
+button {
+  background: #ffffff;
+  border: 2px solid #eaeaea;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.lupa {
+  width: 50px;
+  height: 50px;
+}
+
+.login {
+  padding: 15px 40px;
+  gap: 15px;
+}
+
+.botoes {
+  display: flex;
+  gap: 45px;
+}
+
+.botoes p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #2f2f2f;
+}
+
+/*** 01 SEÇÃO  ***/
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 139px;
+}
+
+.avatar {
+  background: linear-gradient(
+    180deg,
+    #2dc7ed 3.14%,
+    rgba(45, 199, 237, 0) 100%
+  );
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.avatar img,
+.avatar-2 img,
+.avatar-3 img,
+.avatar-4 img {
+  width: 110px;
+  height: 110px;
+}
+
+.avatar,
+.avatar-1,
+.avatar-2,
+.avatar-3,
+.avatar-4,
+.avatar-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-2 {
+  background: linear-gradient(270deg, #f2c94c 0%, rgba(242, 201, 76, 0) 100%);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.text {
+  text-align: center;
+}
+
+.titulo {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #2f2f2f;
+}
+
+.paragrafo {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  text-align: center;
+  color: #2f2f2f;
+}
+
+/*** 02 SEÇÃO ***/
+
+section {
+  padding-top: 102px;
+  gap: 52px;
+}
+
+.memoji {
+  display: flex;
+  padding: 15px 40px;
+  gap: 10px;
+  background: #6610f2;
+  border-radius: 10px;
+}
+
+.memoji p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #f9f9f9;
+}
+
+.biblioteca {
+  display: flex;
+  padding: 15px 40px;
+  gap: 10px;
+  height: 54px;
+  background: #ffffff;
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+}
+
+.biblioteca p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #2f2f2f;
+}
+
+.avatar-3 {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 600px;
+  left: 400px;
+  background: linear-gradient(
+    136.92deg,
+    #ef7c89 3.14%,
+    rgba(239, 124, 137, 0) 100%
+  );
+  border-radius: 30px;
+}
+
+.avatar-4 {
+  position: absolute;
+  top: 750px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(270deg, #7248ec 0%, rgba(114, 72, 236, 0) 100%);
+}
+
+.avatar-5 {
+  position: absolute;
+  z-index: 9999;
+  left: 1400px;
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(180deg, #00e861 0%, rgba(0, 232, 97, 0) 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.avatar-5 img {
+  width: 90px;
+  height: 90px;
+}
+
+/*** RODAPÉ  ***/
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 408px;
+  gap: 188px;
+}
+
+.border {
+  width: 3px;
+  height: 30px;
+  background: #6610f2;
+}
+
+.titulos-footer {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #2f2f2f;
+  opacity: 0.75;
+}
+
+.paragrafo-footer {
+  width: 400px;
+  height: 78px;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2f2f2f;
+}
+
+.titulos {
+  display: flex;
+  gap: 12px;
+}
+
+/*** Copyright ***/
+
+.copy {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #2f2f2f;
+  opacity: 0.75;
+  text-align: center;
+  padding-top: 70px;
+}
