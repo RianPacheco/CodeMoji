@@ -13,7 +13,6 @@
 }
 
 body {
-  width: 1920px;
   height: 1277px;
   overflow-x: hidden;
 }
@@ -51,6 +50,10 @@ button {
 .login {
   padding: 15px 40px;
   gap: 15px;
+}
+
+.login img {
+  display: none;
 }
 
 .botoes {
@@ -276,4 +279,170 @@ footer {
   opacity: 0.75;
   text-align: center;
   padding-top: 70px;
+}
+
+/*** RESPONSIVIDADE ***/
+
+@media (max-width: 1600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+  }
+
+  header p {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    color: #2f2f2f;
+  }
+
+  .botoes {
+    gap: 17px;
+  }
+
+  .login {
+    padding: 16px;
+    gap: 0px;
+  }
+
+  .login img {
+    display: flex;
+  }
+  .login p {
+    display: none;
+  }
+  .lupa img {
+    width: 20px;
+    height: 20px;
+  }
+  .avatar,
+  .avatar-2 {
+    position: absolute;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    top: 98px;
+    left: 15px;
+  }
+
+  .avatar-2 {
+    width: 130px;
+    height: 130px;
+    top: 160px;
+    left: 220px;
+  }
+
+  .avatar img,
+  .avatar-2 img,
+  .avatar-4 img,
+  .avatar-5 img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .avatar-3 {
+    display: none;
+  }
+
+  .avatar-4 {
+    width: 130px;
+    height: 130px;
+    left: 25px;
+  }
+
+  .avatar-5 {
+    left: 210px;
+    top: 700px;
+  }
+
+  .titulo {
+    padding-top: 150px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+  }
+
+  .paragrafo {
+    width: 312px;
+    height: 156px;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #2f2f2f;
+  }
+
+  section {
+    gap: 23px;
+  }
+
+  .memoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    width: 184px;
+    height: 50px;
+  }
+
+  .memoji p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #f9f9f9;
+  }
+
+  .biblioteca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    width: 184px;
+    height: 50px;
+    background: #ffffff;
+    border: 2px solid #eaeaea;
+    border-radius: 6px;
+  }
+
+  .biblioteca p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+  }
+
+  footer {
+    display: inline-block;
+    padding-top: 250px;
+  }
+
+  .paragrafo-footer {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #2f2f2f;
+    width: 362px;
+    height: 48px;
+  }
 }
